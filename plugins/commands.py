@@ -63,18 +63,19 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(f"Play", callback_data='help_play'),
-                        InlineKeyboardButton(f"Cài đặt", callback_data=f"help_settings"),
-                        InlineKeyboardButton(f"Ghi lại", callback_data='help_record'),
+                 #       InlineKeyboardButton(f"Play", callback_data='help_play'),
+                 #       InlineKeyboardButton(f"Cài đặt", callback_data=f"help_settings"),
+                 #       InlineKeyboardButton(f"Ghi lại", callback_data='help_record'),
+                        InlineKeyboardButton(f"Vét Máng Group", url='https://t.me/+S5obLSW8ChIxNjA1'),
                     ],
                     [
-                        InlineKeyboardButton("Lập lịch trình", callback_data="help_schedule"),
-                        InlineKeyboardButton("Kiểm soát", callback_data='help_control'),
-                        InlineKeyboardButton("Admins", callback_data="help_admin"),
+                        InlineKeyboardButton("Tải app xem gái live free", url="https://qql849.com"),
+                 #       InlineKeyboardButton("Kiểm soát", callback_data='help_control'),
+                 #       InlineKeyboardButton("Admins", callback_data="help_admin"),
                     ],
                     [
-                        InlineKeyboardButton(f"Linh tinh", callback_data='help_misc'),
-                        InlineKeyboardButton("Close", callback_data="close"),
+                   #     InlineKeyboardButton(f"Linh tinh", callback_data='help_misc'),
+                        InlineKeyboardButton("Đóng", callback_data="close"),
                     ],
                 ]
                 )
