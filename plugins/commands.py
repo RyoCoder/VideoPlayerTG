@@ -53,7 +53,7 @@ IST = pytz.timezone(Config.TIME_ZONE)
 if Config.DATABASE_URI:
     from utils import db
 
-HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nTôi là Bot được xây dựng để phát hoặc phát trực tuyến video trong Telegram VoiceChats..\nTôi có thể phát trực tuyến bất kỳ video nào trên YouTube hoặc tệp Telegram hoặc thậm chí là trực tiếp trên YouTube.</b>"
+HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\n.</b>"
 admin_filter=filters.create(is_admin) 
 
 @Client.on_message(filters.command(['meo', f"meo@{Config.BOT_USERNAME}"]))
