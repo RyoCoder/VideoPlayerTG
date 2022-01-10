@@ -56,7 +56,7 @@ if Config.DATABASE_URI:
 HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nTôi là Bot được xây dựng để phát hoặc phát trực tuyến video trong Telegram VoiceChats..\nTôi có thể phát trực tuyến bất kỳ video nào trên YouTube hoặc tệp Telegram hoặc thậm chí là trực tiếp trên YouTube.</b>"
 admin_filter=filters.create(is_admin) 
 
-@Client.on_message(filters.command(['start', f"start@{Config.BOT_USERNAME}"]))
+@Client.on_message(filters.command(['meo', f"meo@{Config.BOT_USERNAME}"]))
 async def start(client, message):
     if len(message.command) > 1:
         if message.command[1] == 'help':
@@ -143,7 +143,7 @@ async def start(client, message):
 
 
 
-@Client.on_message(filters.command(["help", f"help@{Config.BOT_USERNAME}"]))
+@Client.on_message(filters.command(["trogiup", f"trogiup@{Config.BOT_USERNAME}"]))
 async def show_help(client, message):
     reply_markup=InlineKeyboardMarkup(
         [
@@ -189,10 +189,9 @@ async def repo_(client, message):
     buttons = [
         [
             InlineKeyboardButton('🧩 Kênh', url='https://t.me/vietnamhub'),
-            InlineKeyboardButton('⚙️ Nhóm', url='https://t.me/joinchat/ug0cFfrfD3Q1MDll'),     
+            InlineKeyboardButton('⚙️ Nhóm', url='https://t.me/vetmang'),     
         ],
         [
-            InlineKeyboardButton("Box chát ❤", url='http://t.me/joinchat/BvHYpFNhr9o1M2Y9'),
             InlineKeyboardButton('🗑 Đóng', callback_data='close'),
         ]
     ]
