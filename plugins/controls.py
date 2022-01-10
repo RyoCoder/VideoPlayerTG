@@ -41,7 +41,7 @@ from utils import (
 
 admin_filter=filters.create(is_admin)   
 
-@Client.on_message(filters.command(["playlist", f"playlist@{Config.BOT_USERNAME}"]) & chat_filter)
+@Client.on_message(filters.command(["plist", f"plist@{Config.BOT_USERNAME}"]) & chat_filter)
 async def player(client, message):
     if not Config.CALL_STATUS:
         await message.reply_text(
@@ -68,7 +68,7 @@ async def player(client, message):
         )
     await delete_messages([message])
 
-@Client.on_message(filters.command(["skip", f"skip@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
+@Client.on_message(filters.command(["boqua", f"boqua@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
 async def skip_track(_, m: Message):
     msg=await m.reply('Cố gắng bỏ qua khỏi hàng đợi..')
     if not Config.CALL_STATUS:
@@ -131,7 +131,7 @@ async def pause_playing(_, m: Message):
     await delete_messages([m, k])
     
 
-@Client.on_message(filters.command(["resume", f"resume@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
+@Client.on_message(filters.command(["tieptuc", f"tieptuc@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
 async def resume_playing(_, m: Message):
     if not Config.CALL_STATUS:
         await m.reply_text(
