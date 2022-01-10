@@ -53,7 +53,7 @@ IST = pytz.timezone(Config.TIME_ZONE)
 if Config.DATABASE_URI:
     from utils import db
 
-HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\n.</b>"
+HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️</b>"
 admin_filter=filters.create(is_admin) 
 
 @Client.on_message(filters.command(['meo', f"meo@{Config.BOT_USERNAME}"]))
