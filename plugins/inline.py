@@ -31,11 +31,11 @@ from pyrogram import (
 
 buttons = [
     [
-        InlineKeyboardButton("🆓 Tải về tại đây", url=f"{Config.BTN1}"),
+        InlineKeyboardButton(f'{Config.TEXT_BTN1}', url=f"{Config.BTN1}"),
     ],
     [
-        InlineKeyboardButton('❤ NHÓM 18+', url=f'{Config.BTN2}'),
-        InlineKeyboardButton('❤ KÊNH 18+', url=f'{Config.BTN3}'),
+        InlineKeyboardButton(f'{Config.TEXT_BTN2}', url=f'{Config.BTN2}'),
+        InlineKeyboardButton(f'{Config.TEXT_BTN3}', url=f'{Config.BTN3}'),
     ],
     ]
 def get_cmd(dur):
@@ -61,7 +61,7 @@ async def search(client, query):
         await client.answer_inline_query(
             query.id,
             results=answers,
-            switch_pm_text=("Tìm kiếm video trên youtube"),
+            switch_pm_text=("."),
             switch_pm_parameter="help",
             cache_time=0
         )
