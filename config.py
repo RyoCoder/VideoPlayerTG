@@ -65,7 +65,7 @@ class Config:
     TEXT_BTN1=os.environ.get("TEXT_BTN1", "🆓 Tải về tại đây")
     BTN2=os.environ.get("BTN2", "https://t.me/vietnamhub")
     TEXT_BTN2=os.environ.get("TEXT_BTN2", "❤ NHÓM 18+")
-    BTN3=os.environ.get("BTN2", "https://t.me/vetmang")
+    BTN3=os.environ.get("BTN3", "https://t.me/vetmang")
     TEXT_BTN3=os.environ.get("TEXT_BTN3", "❤ KÊNH 18+")
     #others
     
