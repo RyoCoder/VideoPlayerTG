@@ -61,6 +61,9 @@ class Config:
     ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "False"))
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", "**Em đang live trên app https://bit.ly/69shows nên không thể rep anh được, anh tải app về rồi vào room để nói chuyện với em nha!**")
     EDIT_TITLE = os.environ.get("EDIT_TITLE", False)
+    BTN1=os.environ.get("BTN1", "https://bit.ly/69shows")
+    BTN2=os.environ.get("BTN2", "https://t.me/vietnamhub")
+    BTN3=os.environ.get("BTN2", "https://t.me/vetmang")
     #others
     
     RECORDING_DUMP=os.environ.get("RECORDING_DUMP", False)
