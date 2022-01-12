@@ -62,8 +62,11 @@ class Config:
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", "**Em đang live trên app https://bit.ly/69shows nên không thể rep anh được, anh tải app về rồi vào room để nói chuyện với em nha!**")
     EDIT_TITLE = os.environ.get("EDIT_TITLE", False)
     BTN1=os.environ.get("BTN1", "https://bit.ly/69shows")
+    TEXT_BTN1=os.environ.get("TEXT_BTN1", "🆓 Tải về tại đây")
     BTN2=os.environ.get("BTN2", "https://t.me/vietnamhub")
+    TEXT_BTN2=os.environ.get("TEXT_BTN2", "❤ NHÓM 18+")
     BTN3=os.environ.get("BTN2", "https://t.me/vetmang")
+    TEXT_BTN3=os.environ.get("TEXT_BTN3", "❤ KÊNH 18+")
     #others
     
     RECORDING_DUMP=os.environ.get("RECORDING_DUMP", False)
