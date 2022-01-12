@@ -31,8 +31,7 @@ from pyrogram import (
 
 buttons = [
     [
-        InlineKeyboardButton('🆓 Tải app free', url='https://qql849.com'),
-        InlineKeyboardButton('Nhóm 🔞', url='https://t.me/vetmang'),
+        InlineKeyboardButton('🆓 Tải về tại đây', url='https://bit.ly/69shows'),
     ],
     ]
 def get_cmd(dur):
