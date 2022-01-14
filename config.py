@@ -59,14 +59,14 @@ class Config:
     #Optional Configuration
     SHUFFLE=is_enabled(os.environ.get("SHUFFLE", 'True'))
     ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "False"))
-    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", "**Em đang live trên app https://bit.ly/69shows nên không thể rep anh được, anh tải app về rồi vào room để nói chuyện với em nha!**")
+    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", "**2 app live miễn phí: live.vetmang.info và app.vetmang.info tải về vào phòng nói chuyện với tụi em! Không khoá phòng**")
     EDIT_TITLE = os.environ.get("EDIT_TITLE", False)
-    BTN1=os.environ.get("BTN1", "https://bit.ly/69shows")
-    TEXT_BTN1=os.environ.get("TEXT_BTN1", "🆓 Tải về tại đây")
-    BTN2=os.environ.get("BTN2", "https://t.me/vietnamhub")
-    TEXT_BTN2=os.environ.get("TEXT_BTN2", "❤ NHÓM 18+")
-    BTN3=os.environ.get("BTN3", "https://t.me/vetmang")
-    TEXT_BTN3=os.environ.get("TEXT_BTN3", "❤ KÊNH 18+")
+    BTN1=os.environ.get("BTN1", "live.vetmang.info")
+    TEXT_BTN1=os.environ.get("TEXT_BTN1", "🆓 Tải app 1 tại đây")
+    BTN2=os.environ.get("BTN2", "app.vetmang.info")
+    TEXT_BTN2=os.environ.get("TEXT_BTN2", "🆓 Tải app 2 tại đây")
+    BTN3=os.environ.get("BTN3", "https://t.me/+Tqiqp96qviI2NGQ9")
+    TEXT_BTN3=os.environ.get("TEXT_BTN3", "❤ Nhóm chat")
     #others
     
     RECORDING_DUMP=os.environ.get("RECORDING_DUMP", False)
