@@ -31,12 +31,6 @@ from pyrogram import (
 
 buttons = [
     [
-        InlineKeyboardButton('⚡️ Bánh Bao Thịt', url='https://t.me/+S5obLSW8ChIxNjA1'),
-    ],
-    [
-        InlineKeyboardButton('🔞 Cybersex Việt Nam', url='https://t.me/+IZwD5_y9MtNiYzNl'),
-    ],
-    [
         InlineKeyboardButton('APP XEM LIVE FREE 🆓', url='https://qql849.com'),
     ],
     ]
